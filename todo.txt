@@ -1,0 +1,28 @@
+Secure File Vault App:
+
+A react app where users can create a vault and upload, encrypt, and store files securely. They can later decrypt and download their files, and share the vault id pass to other to share the files.
+
+Security Mechanisms Used: 
+Authentication & Authorization – JWT-based login system. 
+Encryption – AES or RSA encryption before uploading files. 
+Hashing – Use SHA-256 to verify file integrity. 
+Secure Communication – HTTPS/TLS for all network calls.
+Access Control – Only people with id pass can acces the vault
+
+High-Level Flow:
+User registers and logs in → receives JWT (access + refresh).
+User creates a vault → local keypair (vault public/private) generated using any suitable package or api.
+User uploads a file → Encrypt it and send it to firebase backend
+A vault is created (new folder on firebase storage) and a invitation token is generated
+Metadata (vault_id, encrypted_AES_key, hash, filename) is sent to the backend.
+Other users can access if they have the vault_id + invitation token, which allows fetching metadata and wrapped AES keys for decryption.
+
+Tech Stack
+Vite + React + Javascript.
+TailwindCSS and ShadCN UI. (Already setup, verify)
+Axios for authenticated API calls.
+React Router – for navigation.
+JWT Storage – Access token in memory (React state), refresh token in HttpOnly cookie.
+Hasura for backend metadata storage. (HasuraClient.js already present in backend/utils and env is setup, give the tables to make and queries to execute)
+Express backend
+Firebase for storage of encrypted files with proper naming method to retrieve and decrypt when required. (Only npm install firebase has been done currently in frontend, nothing else).
