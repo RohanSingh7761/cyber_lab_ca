@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { executeQuery } = require('../utils/HasuraClient');
+const { executeQuery } = require('../utils/hasuraClient');
 const auth = require('../middleware/auth');
 
 // Add credential (stored as file metadata)

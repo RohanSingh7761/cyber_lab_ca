@@ -1,7 +1,7 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const { executeQuery } = require('../utils/HasuraClient');
+const { executeQuery } = require('../utils/hasuraClient');
 
 const router = express.Router();
 

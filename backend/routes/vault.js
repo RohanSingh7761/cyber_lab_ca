@@ -1,6 +1,6 @@
 const express = require('express');
 const { authenticateToken } = require('../middleware/auth');
-const { executeQuery } = require('../utils/HasuraClient');
+const { executeQuery } = require('../utils/hasuraClient');
 const { generateInvitationToken } = require('../utils/crypto');
 
 const router = express.Router();
