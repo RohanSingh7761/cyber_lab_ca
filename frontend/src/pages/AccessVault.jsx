@@ -82,7 +82,7 @@ export default function AccessVault() {
 
     return (
         <div className="min-h-screen bg-black">
-            <header className="border-b border-border bg-gradient-to-r from-surface/80 to-black/80 backdrop-blur-xl sticky top-0 z-50">
+            <header className="border-b border-border bg-linear-to-r from-surface/80 to-black/80 backdrop-blur-xl sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
                     <div className="flex items-center gap-3 sm:gap-4">
                         <button
@@ -94,7 +94,7 @@ export default function AccessVault() {
                             </svg>
                             Back
                         </button>
-                        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary via-primary to-orange-500 rounded-lg flex items-center justify-center shadow-lg shadow-primary/30">
+                        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-linear-to-br from-primary via-primary to-orange-500 rounded-lg flex items-center justify-center shadow-lg shadow-primary/30">
                             <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
                             </svg>
@@ -105,9 +105,9 @@ export default function AccessVault() {
             </header>
 
             <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-                <div className="bg-gradient-to-br from-surface/50 to-black border border-border rounded-2xl p-6 sm:p-8 backdrop-blur-xl">
+                <div className="bg-linear-to-br from-surface/50 to-black border border-border rounded-2xl p-6 sm:p-8 backdrop-blur-xl">
                     <div className="mb-6 text-center">
-                        <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-orange-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div className="w-20 h-20 bg-linear-to-br from-primary/20 to-orange-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
                             <svg className="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                             </svg>
@@ -182,7 +182,7 @@ export default function AccessVault() {
 
                         <div className="bg-primary/10 border border-primary/30 rounded-lg p-4">
                             <div className="flex gap-3">
-                                <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <svg className="w-5 h-5 text-primary shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                                 </svg>
                                 <div>
@@ -197,7 +197,7 @@ export default function AccessVault() {
                         <button
                             type="submit"
                             disabled={loading}
-                            className="w-full bg-gradient-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white font-semibold py-3 rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-primary/50"
+                            className="w-full bg-linear-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white font-semibold py-3 rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-primary/50"
                         >
                             {loading ? (
                                 <span className="flex items-center justify-center gap-2">

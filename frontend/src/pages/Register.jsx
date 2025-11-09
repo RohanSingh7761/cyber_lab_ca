@@ -38,7 +38,7 @@ export default function Register() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="min-h-screen bg-linear-to-br from-black via-gray-900 to-black flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 right-20 w-72 h-72 sm:w-96 sm:h-96 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
@@ -48,7 +48,7 @@ export default function Register() {
             <div className="max-w-md w-full space-y-6 sm:space-y-8 relative z-10">
                 {/* Logo/Header */}
                 <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary via-primary to-orange-500 rounded-2xl mb-4 shadow-lg shadow-primary/30">
+                    <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-linear-to-br from-primary via-primary to-orange-500 rounded-2xl mb-4 shadow-lg shadow-primary/30">
                         <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
                         </svg>
@@ -117,7 +117,7 @@ export default function Register() {
                         <button
                             type="submit"
                             disabled={loading}
-                            className="w-full bg-gradient-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white font-semibold py-3 rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-primary/50"
+                            className="w-full bg-linear-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white font-semibold py-3 rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-primary/50"
                         >
                             {loading ? (
                                 <span className="flex items-center justify-center gap-2">

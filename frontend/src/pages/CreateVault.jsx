@@ -51,7 +51,7 @@ export default function CreateVault() {
 
     return (
         <div className="min-h-screen bg-black">
-            <header className="border-b border-border bg-gradient-to-r from-surface/80 to-black/80 backdrop-blur-xl sticky top-0 z-50">
+            <header className="border-b border-border bg-linear-to-r from-surface/80 to-black/80 backdrop-blur-xl sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
                     <div className="flex items-center gap-3 sm:gap-4">
                         <button
@@ -63,7 +63,7 @@ export default function CreateVault() {
                             </svg>
                             Back
                         </button>
-                        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary via-primary to-orange-500 rounded-lg flex items-center justify-center shadow-lg shadow-primary/30">
+                        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-linear-to-br from-primary via-primary to-orange-500 rounded-lg flex items-center justify-center shadow-lg shadow-primary/30">
                             <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                             </svg>
@@ -74,7 +74,7 @@ export default function CreateVault() {
             </header>
 
             <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-                <div className="bg-gradient-to-br from-surface/50 to-black border border-border rounded-2xl p-6 sm:p-8 backdrop-blur-xl">
+                <div className="bg-linear-to-br from-surface/50 to-black border border-border rounded-2xl p-6 sm:p-8 backdrop-blur-xl">
                     <form onSubmit={handleSubmit} className="space-y-6">
                         {error && (
                             <div className="bg-red-500/10 border border-red-500/50 text-red-400 px-4 py-3 rounded-lg flex items-center gap-2">
@@ -134,7 +134,7 @@ export default function CreateVault() {
 
                         <div className="bg-primary/10 border border-primary/30 rounded-lg p-4">
                             <div className="flex gap-3">
-                                <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <svg className="w-5 h-5 text-primary shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                                 </svg>
                                 <div>
@@ -149,7 +149,7 @@ export default function CreateVault() {
                         <button
                             type="submit"
                             disabled={loading}
-                            className="w-full bg-gradient-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white font-semibold py-3 rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-primary/50"
+                            className="w-full bg-linear-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white font-semibold py-3 rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-primary/50"
                         >
                             {loading ? (
                                 <span className="flex items-center justify-center gap-2">

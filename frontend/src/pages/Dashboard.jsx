@@ -32,22 +32,22 @@ export default function Dashboard() {
     return (
         <div className="min-h-screen bg-black">
             {/* Header */}
-            <header className="border-b border-border bg-gradient-to-r from-surface/80 to-black/80 backdrop-blur-xl sticky top-0 z-50">
+            <header className="border-b border-border bg-linear-to-r from-surface/80 to-black/80 backdrop-blur-xl sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
                     <div className="flex justify-between items-center">
                         <div className="flex items-center gap-2 sm:gap-3">
-                            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary via-primary to-orange-500 rounded-lg flex items-center justify-center shadow-lg shadow-primary/30">
+                            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-linear-to-br from-primary via-primary to-orange-500 rounded-lg flex items-center justify-center shadow-lg shadow-primary/30">
                                 <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                                 </svg>
                             </div>
-                            <h1 className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                            <h1 className="text-lg sm:text-2xl font-bold bg-linear-to-r from-white to-gray-400 bg-clip-text text-transparent">
                                 SecureVault
                             </h1>
                         </div>
                         <div className="flex items-center gap-2 sm:gap-4">
                             <div className="hidden sm:flex items-center gap-2 px-3 sm:px-4 py-2 bg-surface/50 rounded-lg border border-border">
-                                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-primary via-primary to-orange-500 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-bold">
+                                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-linear-to-br from-primary via-primary to-orange-500 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-bold">
                                     {user?.email?.[0]?.toUpperCase() || 'U'}
                                 </div>
                                 <span className="text-gray-400 text-xs sm:text-sm hidden md:inline">{user?.email}</span>
@@ -88,7 +88,7 @@ export default function Dashboard() {
                         </button>
                         <button
                             onClick={() => navigate('/create-vault')}
-                            className="flex-1 lg:flex-none px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-primary via-primary to-orange-500 hover:from-orange-500 hover:to-primary text-white font-semibold rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-primary/30 flex items-center justify-center gap-2 text-sm sm:text-base"
+                            className="flex-1 lg:flex-none px-4 sm:px-6 py-2.5 sm:py-3 bg-linear-to-r from-primary via-primary to-orange-500 hover:from-orange-500 hover:to-primary text-white font-semibold rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-primary/30 flex items-center justify-center gap-2 text-sm sm:text-base"
                         >
                             <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -111,8 +111,8 @@ export default function Dashboard() {
                         </div>
                     </div>
                 ) : vaults.length === 0 ? (
-                    <div className="bg-gradient-to-br from-surface/50 to-black border border-border rounded-2xl p-16 text-center backdrop-blur-xl">
-                        <div className="w-24 h-24 bg-gradient-to-br from-primary/20 to-orange-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="bg-linear-to-br from-surface/50 to-black border border-border rounded-2xl p-16 text-center backdrop-blur-xl">
+                        <div className="w-24 h-24 bg-linear-to-br from-primary/20 to-orange-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
                             <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
                             </svg>
@@ -123,7 +123,7 @@ export default function Dashboard() {
                         </p>
                         <button
                             onClick={() => navigate('/create-vault')}
-                            className="px-8 py-3 bg-gradient-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white font-semibold rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-primary/50 inline-flex items-center gap-2"
+                            className="px-8 py-3 bg-linear-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white font-semibold rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-primary/50 inline-flex items-center gap-2"
                         >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -137,10 +137,10 @@ export default function Dashboard() {
                             <div
                                 key={vault.id}
                                 onClick={() => navigate(`/vault/${vault.id}`)}
-                                className="group bg-gradient-to-br from-surface/50 to-black border-2 border-border rounded-2xl p-4 sm:p-6 hover:border-primary transition-all cursor-pointer backdrop-blur-xl transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20"
+                                className="group bg-linear-to-br from-surface/50 to-black border-2 border-border rounded-2xl p-4 sm:p-6 hover:border-primary transition-all cursor-pointer backdrop-blur-xl transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20"
                             >
                                 <div className="flex items-start justify-between mb-3 sm:mb-4">
-                                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary/20 to-orange-600/20 rounded-xl flex items-center justify-center group-hover:from-primary/30 group-hover:to-orange-600/30 transition-all">
+                                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-linear-to-br from-primary/20 to-orange-600/20 rounded-xl flex items-center justify-center group-hover:from-primary/30 group-hover:to-orange-600/30 transition-all">
                                         <svg className="w-6 h-6 sm:w-7 sm:h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" />
                                         </svg>
@@ -172,7 +172,7 @@ export default function Dashboard() {
                 {/* Stats Section */}
                 {vaults.length > 0 && (
                     <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-                        <div className="bg-gradient-to-br from-surface/50 to-black border border-border rounded-2xl p-6 backdrop-blur-xl">
+                        <div className="bg-linear-to-br from-surface/50 to-black border border-border rounded-2xl p-6 backdrop-blur-xl">
                             <div className="flex items-center gap-3 mb-2">
                                 <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
                                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -183,7 +183,7 @@ export default function Dashboard() {
                             </div>
                             <p className="text-3xl font-bold text-white">{vaults.length}</p>
                         </div>
-                        <div className="bg-gradient-to-br from-surface/50 to-black border border-border rounded-2xl p-6 backdrop-blur-xl">
+                        <div className="bg-linear-to-br from-surface/50 to-black border border-border rounded-2xl p-6 backdrop-blur-xl">
                             <div className="flex items-center gap-3 mb-2">
                                 <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
                                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -194,7 +194,7 @@ export default function Dashboard() {
                             </div>
                             <p className="text-3xl font-bold text-white">{vaults.filter(v => v.isOwner).length}</p>
                         </div>
-                        <div className="bg-gradient-to-br from-surface/50 to-black border border-border rounded-2xl p-6 backdrop-blur-xl">
+                        <div className="bg-linear-to-br from-surface/50 to-black border border-border rounded-2xl p-6 backdrop-blur-xl">
                             <div className="flex items-center gap-3 mb-2">
                                 <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
                                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
